@@ -1,2 +1,8 @@
 calculate # of 1s: x = x&(x-1)
+
 swap value(say A and B): X = X^(A^B)
+
+sum without addition:
+public int getSum(int a, int b) {
+    return b == 0 ? a : getSum(a^b, (a&b)<<1);
+}
