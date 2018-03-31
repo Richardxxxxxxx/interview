@@ -44,5 +44,9 @@ https://blog.csdn.net/stpeace/article/details/77799724
 https://www.cnblogs.com/feiguo/archive/2013/11/29/3449352.html
 https://blog.csdn.net/gogogo_sky/article/details/72860426
 
+
+differences between new/delete and malloc/free, core idea: new/delete pair is an operator, it will invoke construct/deconstruct when called
+reference:https://blog.csdn.net/qq_26816591/article/details/52214313
+
 linux:
 JAVA:
