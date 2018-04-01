@@ -12,3 +12,6 @@ public int getSum(int a, int b) {
 后序遍历：左右根
 
 前+中可以唯一确定一颗树。
+
+
+A Linear Time Majority Vote Algorithm:http://www.cs.utexas.edu/~moore/best-ideas/mjrty/
