@@ -54,7 +54,7 @@ const:
        const A fun2( );                 [7]  返回值A不能修改（对象属性）
        const A* fun3( );                [8]  返回值A不能修改（指向地址）
        void fun() const;                [9]  禁止修改数据成员
-hreference: https://blog.csdn.net/arduousbonze/article/details/1609833
+reference: https://blog.csdn.net/arduousbonze/article/details/1609833
 
 
 differences between new/delete and malloc/free, core idea: new/delete pair is an operator, it will invoke construct/deconstruct when called
