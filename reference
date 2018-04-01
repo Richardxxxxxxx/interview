@@ -19,7 +19,18 @@ https://blog.csdn.net/wolenski/article/details/7969908
 （3）进入临界区的进程要在有限时间内退出，以便其它进程能及时进入自己的临界区；
 （4）如果进程不能进入自己的临界区，则应让出CPU，避免进程出现“忙等”现象。
 缓冲区溢出：缓冲区溢出是指当计算机向缓冲区内填充数据时超过了缓冲区本身的容量，溢出的数据覆盖在合法数据上。
+
 network:
+TCP:reference:https://blog.csdn.net/xifeijian/article/details/12777187
+
+why three-way handshake is needed in connection establishment:
+simple explanation: to confirm both sides can receive data, in other words, to confirm the connection is vaild
+from wiki:At this point, both the client and server have received an acknowledgment of the connection. 
+The steps 1, 2 establish the connection parameter (sequence number) for one direction and it is acknowledged. 
+The steps 2, 3 establish the connection parameter (sequence number) for the other direction and it is acknowledged. With these, a full-duplex communication is established.
+
+why four-way handshake is neede in connection termination:
+simple explanation: the connection can terminate only when both sides have confirmed in case that only one counterpart inform that it has finished but the other one still needs to send packet   
 
 database:
 https://blog.csdn.net/hectorhua/article/details/13767361
@@ -27,6 +38,7 @@ python:
 http://python.jobbole.com/85231/
 
 C++:
+reference:https://www.cnblogs.com/Y1Focus/p/6707121.html
 构造函数：
 赋值：https://blog.csdn.net/chenlycly/article/details/53558675
 初始化顺序：https://blog.csdn.net/real_myth/article/details/51752212
