@@ -15,3 +15,5 @@ public int getSum(int a, int b) {
 
 
 A Linear Time Majority Vote Algorithm:http://www.cs.utexas.edu/~moore/best-ideas/mjrty/
+
+Floyd's cycle detection:https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare
