@@ -89,6 +89,7 @@ reference:https://blog.csdn.net/qq_26816591/article/details/52214313
 
 linux:
 JAVA:
+reference:https://www.cnblogs.com/java1024/p/7685400.html
 
 并发编程：
 在并发编程中，我们通常会遇到以下三个问题：原子性问题，可见性问题，有序性问题
