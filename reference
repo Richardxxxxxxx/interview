@@ -8,7 +8,7 @@ https://blog.csdn.net/wolenski/article/details/7969908
 （2）忙则等待（保证对临界区的互斥访问）；
 （3）有限等待（有限代表有限的时间，避免死等）；
 （4）让权等待，（当进程不能进入自己的临界区时，应该释放处理机，以免陷入忙等状态）。
-进程 通信 方式：共享存储器同（say 剪贴板），消息传递，管道。
+进程 通信 方式：共享存储器同（say 剪贴板），消息传递，管道，互斥量，信号量。
 线程 同步 方式：临界区（仅同进程中的不同线程），事件对象，互斥量，信号量（后三可不同进程间的线程通信）。
 线程  与  进程：
 （1）进程为系统资源分配和调度的基本单位。
@@ -33,7 +33,21 @@ why four-way handshake is neede in connection termination:
 simple explanation: the connection can terminate only when both sides have confirmed in case that only one counterpart inform that it has finished but the other one still needs to send packet   
 
 database:
-https://blog.csdn.net/hectorhua/article/details/13767361
+reference:https://blog.csdn.net/hectorhua/article/details/13767361
+more detail about database:
+B+, B- tree which adapt from RB tree:
+why? B+/- tree: rach node has fix-size # of keys,that is,fix-size size, this maches the design of RAM loading data into memory
+reference:https://blog.csdn.net/hectorhua/article/details/13767361
+赃读：读取另一对事务未完成的更新。
+不重复读：一个事务范围内两个相同的查询却返回了不同数据
+幻读：
+指事务A读取与搜索条件相匹配的若干行。事务B以插入或删除行等方式来修改事务A的结果集，然后再提交。
+读是指当事务不是独立执行时发生的一种现象，例如第一个事务对一个表中的数据进行了修改，比如这种修改涉及到表中的“全部数据行”。
+同时，第二个事务也 修改这个表中的数据，这种修改是向表中插入“一行新数据”。
+那么，以后就会发生操作第一个事务的用户发现表中还有没有修改的数据行，就好象发生了幻觉一 样
+
+不可重复读和幻读区别：大致的区别在于不可重复读是由于另一个事务对数据的更改所造成的，而幻读是由于另一个事务插入或删除引起的
+
 python:
 http://python.jobbole.com/85231/
 
@@ -75,3 +89,17 @@ reference:https://blog.csdn.net/qq_26816591/article/details/52214313
 
 linux:
 JAVA:
+
+并发编程：
+在并发编程中，我们通常会遇到以下三个问题：原子性问题，可见性问题，有序性问题
+volatile:只解决可见性问题，并不保证线程安全 reference:https://blog.csdn.net/sinat_35512245/article/details/54955174
+hashtable:synchronized实现，效率低下,线程安全
+hashmap:线程不安全
+concurrentHashMap:分段线程安全，效率比hashtable高，get不加锁，value是volatile变量。
+
+GC:https://blog.csdn.net/d6619309/article/details/53358250
+新生代:eden and two survivors
+老年代:
+永久代:存放的是Class类元数据、方法描述
+
+重写：不同作用域，基类函数必须是虚函数，函数名、参数列表和返回类型必须相同
