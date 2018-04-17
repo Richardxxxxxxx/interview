@@ -34,6 +34,15 @@ simple explanation: the connection can terminate only when both sides have confi
 
 database:
 reference:https://blog.csdn.net/hectorhua/article/details/13767361
+
+Red–black tree(wiki):
+1.Each node is either red or black.
+2.The root is black. This rule is sometimes omitted. Since the root can always be changed from red to black, but not necessarily vice versa, this rule has little effect on analysis.
+3.All leaves (NIL) are black.
+4.If a node is red, then both its children are black.
+5.Every path from a given node to any of its descendant NIL nodes contains the same number of black nodes. Some definitions: the number of black nodes from the root to a node is the node's black depth; the uniform number of black nodes in all paths from root to the leaves is called the black-height of the red–black tree
+
+
 more detail about database:
 B+, B- tree which adapt from RB tree:
 why? B+/- tree: rach node has fix-size # of keys,that is,fix-size size, this maches the design of RAM loading data into memory
