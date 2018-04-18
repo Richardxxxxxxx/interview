@@ -1,0 +1,8 @@
+measure of difference
+reference:https://www.zhihu.com/question/19734616
+1.Pearson Correlation
+2.Cosine
+3.Standardization
+4.Summed Square and 
+5.Sample Variance
+6.Euclidean Distance
