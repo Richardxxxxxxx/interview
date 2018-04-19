@@ -6,6 +6,7 @@ reference:https://www.zhihu.com/question/19734616
 4.Summed Square and 
 5.Sample Variance
 6.Euclidean Distance
+7.Mahalanobis distance(unitless and scale-invariant, and takes into account the correlations of the data set)
 
 about big data processing:https://blog.csdn.net/v_july_v/article/details/7382693
 
