@@ -23,3 +23,10 @@ That can be faster when the second derivative is known and easy to compute (the 
 
 imbalanced data set:
 https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/
+
+L1 and L2
+reference:
+http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regularization/
+https://blog.csdn.net/YoYoDelphine/article/details/52888315
+L1:sparse output, bulid-in feature selection
+L2:no parse output and bulid-in feature selection, but improve overfitting.
