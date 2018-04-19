@@ -13,6 +13,7 @@ reference:https://zhuanlan.zhihu.com/p/25765735
 
 Newton's method and gradient descent:
 reference:https://stats.stackexchange.com/questions/253632/why-is-newtons-method-not-widely-used-in-machine-learning
+reference:https://blog.csdn.net/xbinworld/article/details/79113218?ref=myread
 Gradient descent maximizes a function using knowledge of its derivative. 
 Newton's method, a root finding algorithm, maximizes a function using knowledge of its second derivative. 
 That can be faster when the second derivative is known and easy to compute (the Newton-Raphson algorithm is used in logistic regression). However, the analytic expression for the second derivative is often complicated or intractable, requiring a lot of computation. Numerical methods for computing the second derivative also require a lot of computation
