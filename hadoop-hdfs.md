@@ -1,4 +1,4 @@
-(the resources coverd reference from Prof. C.L. Wang's lecture slides)
+(the resources coverd are from Prof. C.L. Wang's lecture slides)
 
 1.X
 
