@@ -31,3 +31,10 @@ http://www.chioka.in/differences-between-l1-and-l2-as-loss-function-and-regulari
 https://blog.csdn.net/YoYoDelphine/article/details/52888315
 L1:sparse output, bulid-in feature selection,laplace distribution.
 L2:no parse output and bulid-in feature selection, but improve overfitting,Gaussian distribution.
+
+freature scaling
+reference:https://en.wikipedia.org/wiki/Feature_scaling
+1.rescaling(min-max):subject to new adding data(may become the smallest or biggest one)
+2.mean normalization
+3.standardization(z-score):subject to spare data()
+4.scaling to unit length: good for applaing L1 norm
