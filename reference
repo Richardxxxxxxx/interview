@@ -70,7 +70,7 @@ reference:https://www.cnblogs.com/Y1Focus/p/6707121.html
 https://blog.csdn.net/wendy_keeping/article/details/75213671
 https://www.cnblogs.com/AndyJee/p/4578586.html
 https://blog.csdn.net/stpeace/article/details/77799724
-（多态赋值实际上只是赋值了一个虚表于0位置，根据声明类型中的函数类型,续函数查找虚表，别的函数于编译器已静态绑定，及时在指向类中被重定义也不受影响）
+（多态赋值实际上只是赋值了一个虚表于0位置，根据基类声明(有无virtual),有virtual去虚表找函数，无直接调用基类函数，别的函数于编译器已静态绑定，及时在指向类中被重定义也不受影响）
 重载，重写，重定义：
 重载：相同作用域、函数名，参数列表不同，返回值同不同都行（仅仅返回值不同而参数列表相同，无法区分函数，进行重载，是不是虚函数无所谓）
 重写：不同作用域，基类函数必须是虚函数，函数名、参数列表和返回类型必须相同
@@ -83,14 +83,14 @@ https://www.cnblogs.com/feiguo/archive/2013/11/29/3449352.html
 https://blog.csdn.net/gogogo_sky/article/details/72860426
 const:
  int b = 500;
-       const int* a = &b;               [1]  *a不能更改
-       int const *a = &b;               [2]  *a不能更改
-       int* const a = &b;               [3]  a不能更改
-       const int* const a = &b;         [4]  *a & a 不能更改
-       void fun0(const A* a );          [5]  a 不能更改（指向地址）
-       void fun1(const A& a);           [6]  a 不能更改（对象属性）
-       const A fun2( );                 [7]  返回值A不能修改（对象属性）
-       const A* fun3( );                [8]  返回值A不能修改（指向地址）
+       const int* a = &b;               [1]  *a不能更改          （根据const 修饰 *a 还是 a判断）
+       int const *a = &b;               [2]  *a不能更改          （根据const 修饰 *a 还是 a判断）
+       int* const a = &b;               [3]  a不能更改           （根据const 修饰 *a 还是 a判断）
+       const int* const a = &b;         [4]  *a & a 不能更改     （根据const 修饰 *a 还是 a判断）
+       void fun0(const A* a );          [5]  *a不能更改
+       void fun1(const A& a);           [6]  a不能更改
+       const A fun2( );                 [7]  A不能更改
+       const A* fun3( );                [8]  *A不能更改
        void fun() const;                [9]  禁止修改数据成员
 reference: https://blog.csdn.net/arduousbonze/article/details/1609833
 
