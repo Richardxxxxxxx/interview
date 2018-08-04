@@ -2,6 +2,7 @@ OS:
 https://blog.csdn.net/youngchang06hpu/article/details/8009947
 https://blog.csdn.net/wolenski/article/details/7969908
 死锁 必要 条件：互斥，不可抢占，占有并等待，环形等待。（必要，破坏任何一个就不会产生死锁）
+https://blog.csdn.net/u014682691/article/details/52062648
 死锁的处理策略：鸵鸟策略、预防策略、避免策略、检测与恢复策略。
 进程 同步 原则：
 （1）空闲让进；
